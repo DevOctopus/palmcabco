@@ -1,16 +1,21 @@
+$grey: #999999;
+$yellow: #f7e641;
+
 body, html {
 	height: 100%;
 	margin: 0;
 }
 
 body {
-	background-color: yellow !important;
+	background-color: $yellow !important;
+	background-image: url('/images/pattern.png');
 }
 
 .slider {
 	background: url('/images/pattern2.jpg') repeat left top;
 	padding: 10px;
 	min-height: 15%;
+	border: 1px $yellow solid;
 	.item.active {
 		height: 100%;
 		img {
@@ -28,7 +33,7 @@ body {
 
 .header {
 	color: #FFFFFF;
-	background: black;
+	background: url('/images/starfield.gif');
 	min-height: 60%;
 	p, small, strong, li, h1 {
 		font-family: BebasNeue, serif;
@@ -39,10 +44,12 @@ body {
 	.call {
 		strong{
 			font-size: 3.5em;
+			color: $yellow;
 		}
 		small {
 			font-size: 1.5em;
 			margin-right: 10px;
+			color: $grey;
 		}
 	}
 	.services {
@@ -51,6 +58,9 @@ body {
 			margin: 0 auto;
 			width: 60%;
 		}
+		strong {
+			color: $grey;
+		}
 	}
 }
 
@@ -58,11 +68,27 @@ nav.navbar {
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	margin-bottom: 0;
+	font-family: BebasNeue, serif;
+	font-size: 1.4em;
+	.navbar-brand {
+		font-size: 1.6em;
+	}
 }
 
 footer {
 	height: auto;
-	padding: 15px;
-
+	padding: 16px;
+	color: $grey;
+	a {
+		text-decoration: none;
+		color: $grey;
+	}
 }
 
+.well {
+	background: black !important;
+	p {
+		font-family: serif;
+		font-size: 1.2em;
+	}
+}
