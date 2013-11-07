@@ -1,0 +1,29 @@
+@media(min-width: 800px) {
+	.services ul li {
+		font-size: 2em;
+	}
+
+	.services ul {
+		width: 67% !important;
+	}
+}
+
+@media(min-height: 960px) {
+	.header header {
+		margin-top: 100px;
+	}
+
+	.services {
+		margin-top: 60px !important;
+	}
+
+	.services ul li {
+		line-height: 2em;
+	}
+}
+
+@media(max-height: 959px) {
+	.header header {
+		margin-top: 10px;
+	}
+}

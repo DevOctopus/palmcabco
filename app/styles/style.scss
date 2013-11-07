@@ -1,0 +1,68 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: yellow !important;
+}
+
+.slider {
+	background: url('/images/pattern2.jpg') repeat left top;
+	padding: 10px;
+	min-height: 15%;
+	.item.active {
+		height: 100%;
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+
+.carousel {
+	.carousel-control {
+		background: none !important;
+	}
+}
+
+.header {
+	color: #FFFFFF;
+	background: black;
+	min-height: 60%;
+	p, small, strong, li, h1 {
+		font-family: BebasNeue, serif;
+	}
+	h1 {
+		font-size: 1.2em;
+	}
+	.call {
+		strong{
+			font-size: 3.5em;
+		}
+		small {
+			font-size: 1.5em;
+			margin-right: 10px;
+		}
+	}
+	.services {
+		margin-top: 20px;
+		ul {
+			margin: 0 auto;
+			width: 60%;
+		}
+	}
+}
+
+nav.navbar {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	margin-bottom: 0;
+}
+
+footer {
+	height: auto;
+	padding: 15px;
+
+}
+
