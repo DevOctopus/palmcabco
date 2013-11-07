@@ -1,3 +1,3 @@
-require(['plugins'], function () {
+require(['plugins', 'addthistracking'], function () {
     'use strict';
 });
