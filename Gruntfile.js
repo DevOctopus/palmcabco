@@ -242,7 +242,17 @@ module.exports = function (grunt) {
             }
         },
 
-        
+        webp: {
+            files: {
+                expand: true,
+                cwd: 'app/images',
+                src: '{,**/}*.{png,jpg,jpeg,gif}',
+                dest: 'app/images/webp'
+            },
+            options: {
+                verbose: true    
+            }
+        },
 
         useminPrepare: {
             options: {
@@ -406,5 +416,7 @@ module.exports = function (grunt) {
         'connect:livereload',
         'autoshot'
     ]);
+
+    grunt.registerTask('default', 'webp');
     
 };
